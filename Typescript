@@ -1,0 +1,7 @@
+1. 내가 지정한 REF의 현재 윈도우에서 위치를 찾고싶다.
+
+- clientHeight: 요소의 내부 높이. 패딩값 포함. 패딩 값은 포함되지만, 스크롤 바, 테두리, 마진 제외
+- offsetHeight: 패딩, 스크롤 바, 테두리 포함. 마진 제외
+- scrollHeight: 요소에 들어있는 컨텐츠의 전체 높이. 패딩과 테두리 포함
+- window.innerHeight: 네비게이션 창을 제외한 윈도우의 높이
+- window.outerHeight: 브라우저 창 자체의 높이
