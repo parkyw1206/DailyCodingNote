@@ -96,3 +96,19 @@
       }
       
 https://velog.io/@xortm854/Typescript-React-Webpack-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-2%ED%8E%B8-tsconfig-%EC%84%A4%EC%A0%95%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90
+
+3. Support for the experimental syntax 'jsx' isn't currently enabled 에러가 떴다. 
+   7 |
+   8 | ReactDOM.render(
+>  9 |   <React.StrictMode>
+     |   ^
+  10 |     <App />
+  11 |   </React.StrictMode>,
+  12 |   document.getElementById('root')
+jsx를 인식하지 못하였는데, .babelrc 파일을 생성하고, 
+그 파일안에 
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+를 넣어주었다.
+
