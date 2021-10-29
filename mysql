@@ -1,0 +1,14 @@
+1. 사용하는 variable 중 한 variable의 값이 null 인 경우가 있어서, 대체 해줘야했다.
+ 먼저, 해당 variable이 null일때의 갯수를 찾아야했다.
+ 아래의 쿼리들을 날려보았다.
+ > SELECT COUNT(1) FROM `(DBNAME)`.tableName where updateTime = null
+ > SELECT COUNT(1) FROM `(DBNAME)`.tableName where updateTime = 0
+ 이렇게 하면 updateTime 이 NULL이 아니라고 select이 안되었다. 
+ 구글링한 결과 , 이럴 경우 
+ > SELECT COUNT(1)  FROM `op.fasoo.eco.api`.ew_meeting where update_time is NULL 
+ 이렇게 날리면 제대로 정상 작동하였다.
+
+2. updatetime이 null일 경우, STARTTIME을 UPDATETIME으로 변경하고싶었다.
+ > update `Dbname`.tablename set UPDATENAME = floor(unix_timestamp(STARTTIME)) * 1000 where UPDATENAME is null;
+unix_timestamp을 사용한다면 TZ형태의 시간을 변환이 가능했지만 왜인지 소숫점이 붙었다. 
+따라서 버림을 사용하였다.
