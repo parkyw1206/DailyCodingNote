@@ -112,3 +112,12 @@ jsx를 인식하지 못하였는데, .babelrc 파일을 생성하고,
 }
 를 넣어주었다.
 
+/*
+
+4. ./src/layout/index.scss (./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-6-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--5-oneOf-6-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-6-4!./src/layout/index.scss)
+Cannot find module 'sass'
+
+새로운 프로젝트에 scss를 사용하려는 경우 sass를 찾을 수 없다는 에러가 나왔다
+/**********************************************************************
+npm i sass
+**********************************************************************/
