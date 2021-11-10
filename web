@@ -1,0 +1,2 @@
+1. 관리자 툴에서 localStorage 의 값을 바꾸고싶을 경우 : localStorage.setItem('key','value')를 사용하면 된다.
+   만약 value 가 object일 경우 localStorage.setItem('key',JSON.stringfy({value})) 를 사용하면 된다.
