@@ -1,0 +1,10 @@
+1. Apache 설치하기
+-> 1. $sudo apt-get update
+-> 2. $sudo apt-get install apache2 
+-> 3. Y
+-> 4. cd /etc/init.d
+-> 5. apache2 존재하나 확인
+-> 시작: sudo service apache2 start
+-> 확인: ps aux | grep apache2
+-> 종료: sudo service apache2 stop
+-> localhost:80 바뀐거 확인 가능하다. 만약 ui 바꾸고싶다면 /var/www/html/index.html 을 수정하도록한다.
