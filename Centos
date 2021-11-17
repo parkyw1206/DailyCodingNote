@@ -7,3 +7,4 @@
 -> 체크: $sudo syetemctl status httpd ==> active인지 확인
 -> 중지: $ sudo systemctl stop http
 => 이렇게 작동하고 localhost:80 에 들어가면 아파치가 실행되어있는 것을 확인 가능. 만약 그 내용을 수정하고 싶으면 /www/html/var/ 인가 거기 써있는 곳으로 들어가 index.html 을 수정한다.
+ ss
